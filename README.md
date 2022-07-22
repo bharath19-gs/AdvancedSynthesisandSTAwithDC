@@ -93,7 +93,7 @@ This is for a 130nm file, but we will be usin 32nm EDK's CCS model's .lib/.db fi
 ## Invoking dc Basic setup
 
 
-![image](https://user-images.githubusercontent.com/55539862/175649128-efb97bae-bb6e-4269-a2f7-20fab63d511c.png)
+![image_optimization]()
 
 
 
@@ -102,23 +102,25 @@ This is for a 130nm file, but we will be usin 32nm EDK's CCS model's .lib/.db fi
 
 #### Access Module Files
 ```
-$ gedit /home/irene/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab1_flop_with_en.v
+$ gedit /home/bharath/DC_WORKSHOP_/DC_WORKSHOP/verilog_files/lab1_flop_with_en.v
+$ gedit /home/bharath/DC_WORKSHOP_/DC_WORKSHOP/verilog_files/tb_lab1_flop_with_en.v
 ```
 
-![image](https://user-images.githubusercontent.com/55539862/175655761-819d376a-e843-4c96-bd37-bbe664f6a7e2.png)
-![image](https://user-images.githubusercontent.com/55539862/175656311-fad775f2-0c2f-40e7-9a45-6b64b583dd5b.png)
+![image_2]()
+![image_3]()
 
 
 ### 1.3. Introduction to ddc gui with Design vision
 
 
 
-![image](https://user-images.githubusercontent.com/55539862/175759734-64338b9b-097d-4c2a-9848-ce91dee15840.png)
+![image_5]()
 
 
 
 
 >_.lib file is a collection of logical modules which includes all basic logic gates. It may also contain different flavors of the same gate (2 input AND, 3 input AND – slow, medium and fast version)._
+
 #### Faster cells and Slower Cells
 
 A cell delay in the digital logic circuit depends on the load of the circuit which here is Capacitance.
@@ -132,38 +134,40 @@ Inorder to charge/discharge the capacitance faster, we use wider transistors tha
 A Constraint is a guidance file given to a synthesizer inorder to enable an optimum implementation of the logic circuit by selecting the appropriate flavour of cells (fast or slow).
 
 ### 1.4. Labs using DC Synopsys DC Setup
-![image](https://user-images.githubusercontent.com/55539862/177386518-d49a44b7-9d77-4ad0-9aff-d4c0fb6217c9.png)
-![image](https://user-images.githubusercontent.com/55539862/175760776-17ddb649-2aa8-4944-882b-75ee9e61b796.png)
+
+![image_6]()
 
 
 ### 1.5 TCL Scripting
 
-![image](https://user-images.githubusercontent.com/55539862/175760634-2fb0b3b5-143b-4408-a809-c788e58fc742.png)
-![image](https://user-images.githubusercontent.com/55539862/175761470-88a4e96b-9e3a-4a65-aebe-477a072d0a64.png)
+![image_7]()
+![image_9]()
 
-![image](https://user-images.githubusercontent.com/55539862/175761429-e891e889-7514-4b83-88e6-aadb3bf7025a.png)
+![image_8]()
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
 ## 2. Day 2 - Basics of STA
 ### 2.1. Introduction to STA
 Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
+
 ![image](https://user-images.githubusercontent.com/55539862/175761772-7a7ab402-6495-4f4d-959e-f009dbdca220.png)
 
+We need to keep basic timing requiremets such as setup-time and holf-time, such that the flops in the design don't get into *metastability* . Metastabiltiy means a unknown value at the output of some intermediate flop and cause the whole design to go haywire 
+
+![image_stuphold]()
 
 
 
 
 
 ### 2.2. Timing dot Libs
-![image](https://user-images.githubusercontent.com/55539862/175762586-57be47d9-c7de-4ed0-8a22-03281a84769d.png)
+![image_10_timing]()
 
 ### 2.3. Exploring Exploring dotLib 
-![image](https://user-images.githubusercontent.com/55539862/175762887-a75aad9b-46b1-49c1-ba12-44948eefc10a.png)
+![image_10_exploring]()
 
-![image](https://user-images.githubusercontent.com/55539862/175765808-18b21585-ccd8-441c-9a9f-8a8202e6d816.png)
-
-![image](https://user-images.githubusercontent.com/55539862/175765782-c2b70c26-4c6e-413b-96fd-3be0e8575d3f.png)
+![image_for_exploring]()
 
 
 
@@ -171,6 +175,7 @@ Static timing analysis (STA) is a method of validating the timing performance of
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 3. Day 3 - Advanced Constraints
+
 **Clock**
 A clock signal oscillates between a high and a low state and is used like a metronome to coordinate actions of digital circuits. A clock signal is produced by a clock generator.
 
@@ -409,3 +414,4 @@ timing-critical sequential cells (cells on the critical path):
    * https://github.com/kunalg123/vsdflow
    * https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
    * https://github.com/google/skywater-pdk
+   * https://allaboutfpga.com/setup-time-and-hold-time-in-fpga/
