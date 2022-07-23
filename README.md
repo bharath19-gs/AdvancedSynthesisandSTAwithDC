@@ -72,8 +72,8 @@ Design Compiler RTL synthesis solution enables users to meet today's design chal
 **SDC**
 The Synopsys Design Constraints (SDC) format is used to specify the design intent, including timing, power and area constraints for a design. This format is used by different EDA tools to synthesize and analyse a design.SDC file syntax is based on TCL format and all commands of sdc file follow the TCL syntax. 
 **DC Setup**
-![image](https://user-images.githubusercontent.com/55539862/175645409-80bbf9f1-0048-4591-b8ca-0ca366e2aa69.png)
 
+![image](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/first_image.png)
 
 ### 1.2. Labs using Design Compiler
  
@@ -85,7 +85,7 @@ $ mkdir DC_WORKSHOP
 //Git Clone sky130RTLDesignAndSynthesisWorkshop. 
 $ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ```
-This is for a 130nm file, but we will be usin 32nm EDK's CCS model's .lib/.db file 
+This is for a 130nm file, but we will be using ***SAED 32nm EDK's CCS model's .lib/.db file*** 
 
 ![image_1](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_1.png)
 
