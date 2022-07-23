@@ -87,17 +87,17 @@ $ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ```
 This is for a 130nm file, but we will be usin 32nm EDK's CCS model's .lib/.db file 
 
-![image_1]()
+![image_1](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_1.png)
 
 
 ## Invoking dc Basic setup
 
 
-![image_optimization]()
+![image_optimization](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/dc_shell_lab1.png)
 
 
 
-![image](https://user-images.githubusercontent.com/55539862/177386077-ebdd87e2-e360-40b3-94dd-0c677e07e198.png)
+![image](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_4_lnk_lib.png)
 
 
 #### Access Module Files
@@ -106,15 +106,15 @@ $ gedit /home/bharath/DC_WORKSHOP_/DC_WORKSHOP/verilog_files/lab1_flop_with_en.v
 $ gedit /home/bharath/DC_WORKSHOP_/DC_WORKSHOP/verilog_files/tb_lab1_flop_with_en.v
 ```
 
-![image_2]()
-![image_3]()
+![image_2](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_2_lab_flop1.png)
+![image_3](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_3_tb_ab_flop1.png)
 
 
 ### 1.3. Introduction to ddc gui with Design vision
 
 
 
-![image_5]()
+![image_5](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_5_schmatic.png)
 
 
 
@@ -135,15 +135,15 @@ A Constraint is a guidance file given to a synthesizer inorder to enable an opti
 
 ### 1.4. Labs using DC Synopsys DC Setup
 
-![image_6]()
+![image_6](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_6_dc_setup.png)
 
 
 ### 1.5 TCL Scripting
 
-![image_7]()
-![image_9]()
+![image_7](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_7_tcl_dc.png)
+![image_9](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_9_tcl_script.png)
 
-![image_8]()
+![image_8](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Image_8_tcl_script_op.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 
@@ -155,7 +155,7 @@ Static timing analysis (STA) is a method of validating the timing performance of
 
 We need to keep basic timing requiremets such as setup-time and holf-time, such that the flops in the design don't get into *metastability* . Metastabiltiy means a unknown value at the output of some intermediate flop and cause the whole design to go haywire 
 
-![image_stuphold]()
+![image_stuphold](https://github.com/bharath19-gs/AdvancedSynthesisandSTAwithDC/blob/main/DC_workshop_images/Setup-and-Hold.png)
 
 
 
@@ -331,17 +331,20 @@ $ create_clock -name MYCLK -per 10
 The combinational optimization phase transforms the logic-level description of the
 combinational logic to a gate-level netlist.
 Combinational optimization includes
+
 - Technology-Independent Optimization
 This optimization operates at the logic level. Design Compiler represents the gates as a
 set of Boolean logic equations.
+
 - Mapping
 During this process, Design Compiler selects components from the logic library to implement the logic structure.
+
 - Technology-Specific Optimization
 This optimization operates at the gate level.
   
-  ![image](https://user-images.githubusercontent.com/55539862/177751853-221a5598-934b-416e-b49b-6d7051275603.png)
+  ![image]()
 
-  ![image](https://user-images.githubusercontent.com/55539862/177748680-7cdec838-3469-44ce-b650-6fa1480bebfb.png)
+  ![image]()
 
        
   ### 4.2 Sequential  Optimizations
